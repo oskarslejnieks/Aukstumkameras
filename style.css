@@ -21,7 +21,7 @@ body {
   max-width: 1980px;
 }
 .container{
-  max-width: 85%;
+  max-width: 75%;
   margin: 0 auto;
   padding: 0 1.5em;
   background-color:  whitesmoke;
@@ -126,7 +126,7 @@ a:hover {
   margin-top: 3%;
  }
 .product {
-  flex: 1fr 1fr 1fr 1fr;
+  flex: 1fr 25% 25% 25%;
   padding: 10px;
   min-width: 200px;
   margin-bottom: 20px;
