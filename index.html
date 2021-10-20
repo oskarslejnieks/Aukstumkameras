@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href ="style.css">
     <script src="https://kit.fontawesome.com/9345ea9f65.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="script.js" async></script>
     <title>Par mums</title>
 </head>
 <body>
@@ -40,7 +40,7 @@
             <h2>Mēs piedāvājam POLAIR standarta Aukstumkameras</h2>
             <p>Tās tiek izmantotas dažādās rūpniecības un komercdarbības jomās: 
               pārtikas produktu, ziedu, kažokādu izstrādājumu 
-              un sagatavju glabāšanai utt</p>
+              un sagatavju glabāšanai, utt</p>
           </div>
         </div>
         <div class="slide">
@@ -53,8 +53,8 @@
         <div class="slide">
           <img src="Images/fasadei/img3-min.png" min-width="1000px" alt="">
           <div class="info3">
-            <h2>Un POLAR monoblokus</h2>
-            <p></p>
+            <h2>POLAR monoblokus</h2>
+            <p>Aukstumiekārtas viena bloka formā ar kompresora kondensatora agregātu un gaisa dzesētāju.</p>
           </div>
         </div>
       
@@ -68,6 +68,47 @@
           <div class="slide-icon"></div>
         </div>
       </div>
+      <div class="questions">
+        <h2 class="question-text">Sazināties ar mums</h2>
+        <button data-modal-target="#modal" class="btn btn-question">Pieprasīt cenu</button>
+                    <div class="modal" id="modal">
+                        <div class="modal-header">
+                            <div class="title">Sazināties ar mums</div>
+                            <button data-close-button class="close-button">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="https://formsubmit.co/lejnieks.oskars@gmail.com" method="POST">
+                                <input type="text" name="vards-uzvards" placeholder="Vārds, Uzvārds *" required>
+                                <input type="email" name="email" placeholder="E-pasts *" required>
+                                <input type="text" name="phone-number" placeholder="Telefona numurs *" required>
+                                <input type="text" name="firm" placeholder="Uzņēmums">
+                                <textarea name="textarea" name="papildus informacija" id="" cols="30" rows="10" placeholder="Papildus informācija"></textarea>
+                                <!-- <div class="g-recaptcha" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"></div> -->
+                                <button class="btn btn-form">Sūtīt</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="overlay"></div>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2165.385368123449!2d27.26554009009152!3d57.13047338194794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ea0a2d04c7539f%3A0x78775762f56b45fe!2sTe%C4%81tra%20iela%206%2C%20Balvi%2C%20Balvu%20pils%C4%93ta%2C%20LV-4501!5e0!3m2!1slv!2slv!4v1634672724154!5m2!1slv!2slv" 
+      width="50%" height="50%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <footer>
+        <div class="footer-container">
+          <h2>Kontakti</h2>
+          <ul>
+            <li class="fa fa-map-marker"><li>Balvi, Teātra iela 6-30 LV-4501</li></li>
+          </ul>
+          <ul>
+            <li class="fa fa-phone"><li>+371 26335643</li></li>
+          </ul>
+          <ul>
+            <li class="fa fa-envelope"><li>modularproduction@inbox.lv</li></li>
+          </ul>
+          <ul>
+            <li class="fa fa-clock-o"><li>Pirmdiena - Piektdiena: 8:00 - 19:00</li></li>
+          </ul>
+        </div>
+      </footer>
 </div> 
 
 <script>
