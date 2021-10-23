@@ -3,46 +3,191 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel = "stylesheet" href ="style.css">
+    <script src="https://kit.fontawesome.com/9345ea9f65.js" crossorigin="anonymous"></script>
     <script src="script.js" async></script>
-    <title>Kontakti</title>
+    <title>Par mums</title>
 </head>
 <body>
-    <div class="container">
-        <nav role="navigation" class="primary-navigation">
-            <ul>
-              <li><a href="index.html">Par mums</a></li>
-              <li><a href="veikals.html">Veikals &dtrif;</a>
-                <ul class="dropdown">
-                    <li><a href="aukstumkameras.html">Aukstumkameras</a></li>
-                    <li><a href="#">Monobloki</a></li>
-                </ul>
-              </li>
-              <li class="last-nav"><a href="kontakti.html">Kontakti</a></li>
+<div class="container">
+    <nav role="navigation" class="primary-navigation" id="mySidenav">
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo.png" alt="">
+        </a>
+      </div>
+      <div class="lang">
+        <ul>
+          <li><a href="#">LAT</a></li>
+          <li><a href="#">ENG</a></li>
+          <li><a href="#">RUS</a></li>
+        </ul>
+      </div>
+      <div class="sidenav" id="mySidenav">
+        <ul>
+          <li><a class="links" href="index.html">Par mums</a></li>
+          <li><a class="links" href="veikals.html">Veikals &dtrif;</a>
+            <ul class="dropdown">
+                <li><a class="links" href="aukstumkameras.html">Aukstumkameras</a></li>
+                <li><a class="links" href="#">Monobloki</a></li>
             </ul>
-          </nav>
+          </li>
+          <li class="last-nav"><a class="links" href="kontakti.html">Kontakti</a></li>
+        </ul>
+      </div>
+      </nav>
+      <span class="menu-button" id="menu-btn">&#9776;</span>
+      <div class="contacts">
+                      
+        <div class="contacts-container">
+      <button data-modal-target="#modal" class="btn-contacts">Sazināties</button>
+                    <div class="modal" id="modal">
+                        <div class="modal-header">
+                            <div class="title">Sazināties ar mums</div>
+                            <button data-close-button class="close-button">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="https://formsubmit.co/lejnieks.oskars@gmail.com" method="POST">
+                                <input type="text" name="vards-uzvards" placeholder="Vārds, Uzvārds *" required>
+                                <input type="email" name="email" placeholder="E-pasts *" required>
+                                <input type="text" name="phone-number" placeholder="Telefona numurs *" required>
+                                <input type="text" name="firm" placeholder="Uzņēmums">
+                                <textarea name="textarea" name="papildus informacija" id="" cols="30" rows="10" placeholder="Papildus informācija"></textarea>
+                                <!-- <div class="g-recaptcha" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"></div> -->
+                                <button class="btn btn-form">Sūtīt</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="overlay"></div>
 
+                    
+                      
+                      <h2>Kontakti:</h2>
+                      <ul>
+                        <li class="fa fa-map-marker"><li>Balvi, Teātra iela 6-30 LV-4501</li></li>
+                      </ul>
+                      <ul>
+                        <li class="fa fa-phone"><li>+371 26335643</li></li> 
+                      </ul>
+                      <ul>
+                        <li class="fa fa-envelope"><li>modularproduction@inbox.lv</li></li>
+                      </ul>
+                      <ul>
+                        <li class="fa fa-clock-o"><li>Pirmdiena - Piektdiena: 8:00 - 19:00</li></li>
+                      </ul>
+                    </div>
+                    </div>
+                    
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2165.385368123449!2d27.26554009009152!3d57.13047338194794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ea0a2d04c7539f%3A0x78775762f56b45fe!2sTe%C4%81tra%20iela%206%2C%20Balvi%2C%20Balvu%20pils%C4%93ta%2C%20LV-4501!5e0!3m2!1slv!2slv!4v1634672724154!5m2!1slv!2slv" 
+      width="50%" height="50%" style="border:0;" allowfullscreen="" loading="lazy" class="map-contacts"></iframe>
+      <footer>
+        <div class="footer-container">
+          <h2>Kontakti</h2>
+          <ul>
+            <li class="fa fa-map-marker"><li>Balvi, Teātra iela 6-30 LV-4501</li></li>
+          </ul>
+          <ul>
+            <li class="fa fa-phone"><li>+371 26335643</li></li> 
+          </ul>
+          <ul>
+            <li class="fa fa-envelope"><li>modularproduction@inbox.lv</li></li>
+          </ul>
+          <ul>
+            <li class="fa fa-clock-o"><li>Pirmdiena - Piektdiena: 8:00 - 19:00</li></li>
+          </ul>
+        </div>
+      </footer>
+</div> 
 
-          <footer>
-            <div class="footer-container">
-              <h2>Kontakti</h2>
-              <ul>
-                <li class="fa fa-map-marker"><li>Balvi, Teātra iela 6-30 LV-4501</li></li>
-              </ul>
-              <ul>
-                <li class="fa fa-phone"><li>+371 26335643</li></li>
-              </ul>
-              <ul>
-                <li class="fa fa-envelope"><li>modularproduction@inbox.lv</li></li>
-              </ul>
-              <ul>
-                <li class="fa fa-clock-o"><li>Pirmdiena - Piektdiena: 8:00 - 19:00</li></li>
-              </ul>
-            </div>
-          </footer>
-    </div>
-    
+<script>
+
+function myFunction() {
+  var x = document.getElementById("mySidenav");
+  if (x.className === "sidenav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+  const slider = document.querySelector(".slider");
+    const nextBtn = document.querySelector(".next-btn");
+    const prevBtn = document.querySelector(".prev-btn");
+    const slides = document.querySelectorAll(".slide");
+    const slideIcons = document.querySelectorAll(".slide-icon");
+    const numberOfSlides = slides.length;
+    var slideNumber = 0;
+
+    //image slider next button
+    nextBtn.addEventListener("click", () => {
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+      slideIcons.forEach((slideIcon) => {
+        slideIcon.classList.remove("active");
+      });
+
+      slideNumber++;
+
+      if(slideNumber > (numberOfSlides - 1)){
+        slideNumber = 0;
+      }
+
+      slides[slideNumber].classList.add("active");
+      slideIcons[slideNumber].classList.add("active");
+    });
+
+    //image slider previous button
+    prevBtn.addEventListener("click", () => {
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+      slideIcons.forEach((slideIcon) => {
+        slideIcon.classList.remove("active");
+      });
+
+      slideNumber--;
+
+      if(slideNumber < 0){
+        slideNumber = numberOfSlides - 1;
+      }
+
+      slides[slideNumber].classList.add("active");
+      slideIcons[slideNumber].classList.add("active");
+    });
+
+    //image slider autoplay
+    var playSlider;
+
+    var repeater = () => {
+      playSlider = setInterval(function(){
+        slides.forEach((slide) => {
+          slide.classList.remove("active");
+        });
+        slideIcons.forEach((slideIcon) => {
+          slideIcon.classList.remove("active");
+        });
+
+        slideNumber++;
+
+        if(slideNumber > (numberOfSlides - 1)){
+          slideNumber = 0;
+        }
+
+        slides[slideNumber].classList.add("active");
+        slideIcons[slideNumber].classList.add("active");
+      }, 10000);
+    }
+    repeater();
+
+    //stop the image slider autoplay on mouseover
+    slider.addEventListener("mouseover", () => {
+      clearInterval(playSlider);
+    });
+
+    //start the image slider autoplay again on mouseout
+    slider.addEventListener("mouseout", () => {
+      repeater();
+    });
+</script>
 </body>
 </html>

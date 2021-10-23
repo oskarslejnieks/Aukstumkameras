@@ -20,6 +20,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 1980px;
+  margin: auto;
 }
 .container{
   width: 80vw;
@@ -190,7 +192,7 @@ a:hover {
 
  /*------------------- Single Product Page-------------------*/
 .productImage {
-  min-width: 200px;
+  width: 40vw;
 }
 table, th, td, tr {
   margin: auto;
@@ -379,7 +381,7 @@ form {
   position: absolute;
   color: #222;
   background: rgba(255, 255, 255, 0.65);
-  width: 75%;
+  width: 60vw;
   margin-top: 50px;
   margin-left: 50px;
   padding: 20px;
@@ -389,8 +391,8 @@ form {
   position: relative;
   color: #222;
   background: rgba(255, 255, 255, 0.65);
-  width: 50%;
-  margin: 150px auto;
+  width: 40vw;
+  margin: 120px auto;
   padding: 20px;
   border-radius: 5px;
 }
@@ -399,34 +401,34 @@ form {
   position: absolute;
   color: #222;
   background: rgba(255, 255, 255, 0.65);
-  width: 50%;
-  margin-top: 500px;
-  margin-left: 50px;
+  width: 30vw;
+  margin-top: 100px;
+  margin-left: 650px;
   padding: 20px;
   border-radius: 5px;
 }
 .slider .slide .info1 h2{
-  font-size: 2em;
+  font-size: 1.5vw;
   font-weight: 800;
 }
 .slider .slide .info2 h2{
-  font-size: 2em;
+  font-size: 1.5vw;
   font-weight: 800;
 }
 .slider .slide .info3 h2{
-  font-size: 2em;
+  font-size: 1.5vw;
   font-weight: 800;
 }
 .slider .slide .info1 p{
-  font-size: 1em;
+  font-size: 0.9vw;
   font-weight: 400;
 }
 .slider .slide .info2 p{
-  font-size: 1em;
+  font-size: 0.9vw;
   font-weight: 400;
 }
 .slider .slide .info3 p{
-  font-size: 1em;
+  font-size: 0.9vw;
   font-weight: 400;
 }
 
@@ -471,8 +473,8 @@ form {
 .navigation-visibility .slide-icon{
   z-index: 999;
   background: rgba(255, 255, 255, 0.7);
-  width: 30px;
-  height: 15px;
+  width: 2vw;
+  height: 1.5vh;
   transform: translateY(-50px);
   margin: 0 6px;
   border-radius: 2px;
@@ -510,7 +512,7 @@ form {
 /* -------------------- Logo ----------------- */
 .logo {
   position: absolute;
-  margin-top: -20px;
+  margin-top: -15px;
   margin-left: 40px;
 }
 
@@ -518,9 +520,9 @@ form {
 
 .primary-navigation .lang {
   position: absolute;
-  margin-left: 1250px;
+  margin-left: 68vw;
   font-weight: 800;
-  font-size: 17px;
+  font-size: 18px;
 }
 .primary-navigation .lang ul li {
   border: none;
@@ -543,7 +545,7 @@ form {
 .questions h2 {
   margin-left: 20px;
   color: #ff523b;
-  font-size: 1.6em;
+  font-size: 1.6vw;
 }
 .questions .btn-question {
   position: absolute;
@@ -556,13 +558,66 @@ form {
   padding: 10px 30px;
   margin: 0;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 1.5vw;
   transition: 0.3s;
 }
 .btn-question:hover {
 background: #4285F4;
 color: black;
 }
+/* --------------------Contacts ---------------- */
+
+.contacts {
+    width: 90%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    margin: 120px auto;
+    border-radius: 25px;
+    box-shadow: 29px 31px 45px -2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 29px 31px 45px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 29px 31px 45px -2px rgba(0,0,0,0.75);
+  }
+  .contacts h2 {
+    font-weight: 400;
+    color: black;
+    margin-left: 40px;
+    font-size: 35px;
+    padding: 10px;
+  }
+  .contacts .contacts-container ul li li:first-of-cl{
+    color: black;
+    border: none;
+    display: flex;  
+  }
+  .contacts .contacts-container ul li{
+    color: black;
+    border: none;
+    font-size: 20px;
+  }
+  .contacts .contacts-container ul li:hover {
+    cursor: text;
+  }
+  .contacts .contacts-container ul .fa {
+    color: #4285F4;
+    margin-left: 40px;
+    padding: 10px;
+  }
+  .btn-contacts {
+    background: #ff523b;
+    color: white;
+    padding: 10px 30px;
+    margin: 0;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-left: 60%;
+    position: absolute;
+    z-index: 0;
+    display: flex;
+    margin-top: 90px;
+  }
+
 
 /* --------------------- Footer ------------------ */
 footer {
@@ -597,8 +652,69 @@ footer .footer-container ul .fa {
   margin-left: 40px;
   padding: 10px;
 }
-iframe {
+.map {
+  width: 50%; 
+  height:50%;
   margin: 100px 25%;
   display: flex;
   justify-content: center;
+}
+.map-contacts {
+  margin: 100px 0px;
+  width: 100%;
+}
+.menu-button {
+  display: none;
+}
+
+@media (min-width: 1281px) and (max-width: 1550px) {
+  .logo {
+    transform: scale(0.8);
+    margin-left: 0;
+  }
+  .primary-navigation .lang {
+    position: absolute;
+    margin-left: 65vw;
+    font-weight: 800;
+    font-size: 18px;
+  }
+  .slider .slide .info3{
+    margin-left: 600px;
+  }
+  .menu-button {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .logo {
+    transform: scale(0.65);
+    margin-left: -30px;
+  }
+  .primary-navigation .lang {
+    position: absolute;
+    margin-left: 65vw;
+    font-weight: 800;
+    font-size: 15px;
+  }
+  .primary-navigation {
+    margin: 0 auto;
+    padding: 40px 0 0 0;  
+    text-align: center;
+    font-size: 1.1em;
+  }
+  .slider .slide .info3{
+    margin-left: 450px;
+    margin-top: 50px;
+  }
+  .menu-button {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .slider .slide .info3{
+    margin-left: 450px;
+  }
+
+
 }
