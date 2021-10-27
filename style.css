@@ -29,6 +29,8 @@ body {
   /* padding: 0 1.5em; */
   background-color:  whitesmoke;
 }
+/* -------- Phone Header ---------*/
+
 
 /* ---------Header------------*/
 
@@ -471,7 +473,7 @@ form {
 }
 
 .navigation-visibility .slide-icon{
-  z-index: 999;
+  z-index: 10;
   background: rgba(255, 255, 255, 0.7);
   width: 2vw;
   height: 1.5vh;
@@ -666,8 +668,14 @@ footer .footer-container ul .fa {
 .menu-button {
   display: none;
 }
+.sidenav {
+  display: none;
+}
 
 @media (min-width: 1281px) and (max-width: 1550px) {
+  .sidenav {
+    display: none;
+  }
   .logo {
     transform: scale(0.8);
     margin-left: 0;
@@ -686,10 +694,14 @@ footer .footer-container ul .fa {
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1280px) {
+@media (min-width: 1023px) and (max-width: 1280px) {
+  .sidenav {
+    display: none;
+  }
   .logo {
     transform: scale(0.65);
-    margin-left: -30px;
+    margin-left: -40px;
+    margin-top: -20px;
   }
   .primary-navigation .lang {
     position: absolute;
@@ -710,11 +722,132 @@ footer .footer-container ul .fa {
   .menu-button {
     display: none;
   }
+  .btn-contacts {
+    padding: 10px;
+  }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1022px) {
+  .inside-navigation {
+    display: grid;
+    grid-template-columns: 150px auto 150px;
+  }
+  .test{
+    display: none;
+  }
   .slider .slide .info3{
     margin-left: 450px;
   }
+  .inside-navigation .logo {
+    padding: 0;
+    position: relative;
+    margin-left: -50px;
+    margin-top: 0;
+    transform: scale(0.5);
+    grid-column: 1;
+    align-self: center;
+    margin-left: -20px;
+    z-index: 1000;
+  }
+  .inside-navigation .lang{
+    margin: 0;
+    font-weight: 800;
+    grid-column: 1/1;
+    justify-self: center;
+    align-self: center;
+    z-index: 1000;
+  }
+  .menu-button {
+    margin: 0;
+    display: grid;
+    z-index: 1005;
+    grid-column: 3;
+    justify-self: flex-end;
+    align-self: center;
+    margin-right: 40px;
+  }
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 53;
+    top: 0;
+    right: 0;
+    background-color: gainsboro;
+    overflow-x: hidden;
+    transition: 0.3s;
+    float: right;
+    display: block;
+  }
+  .sidenav a {
+    text-align: center;
+    justify-content: right;
+    text-decoration: none;
+    font-size: 28px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    color: black;
+    padding: 25px;
+  }
+  .navWrapper {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 170px;
+  }
+  .sidenav a:hover {
+    margin-right: 25px;
+  }
+  .virsraksts {
+    font-size: 1.5em;
+    padding-top: 50px;
+    text-transform: uppercase;
+  }
+.questions .btn-question {
+  margin-left: 55%;
+  padding: 5px 20px;
+  font-size: 11.5px;
+  font-weight: normal;
+}
+.navigation-visibility .slide-icon{
+  width: 1.5vw;
+}
+.slider .slide .info1{
+  width: 30vw;
+}
+.slider .slide .info1 p {
+  font-size: 11px;
+}
+.slider .slide .info1 h2 {
+  font-size: 14px;
+}
 
+.slider .slide .info2{
+  width: 30vw;
+  margin-top: 50px;
+}
+.slider .slide .info2 p {
+  font-size: 11px;
+}
+.slider .slide .info2 h2 {
+  font-size: 14px;
+}
+
+.slider .slide .info3{
+  width: 25vw;
+  margin-top: 120px;
+  margin-left: 220px;
+}
+.slider .slide .info3 p {
+  font-size: 11px;
+}
+.slider .slide .info3 h2 {
+  font-size: 14px;
+}
+footer h2 {
+  font-size: 20px;
+}
+footer ul li {
+  font-size: 14px;
+}
 
 }

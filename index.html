@@ -10,11 +10,12 @@
 </head>
 <body>
 <div class="container">
-    <nav role="navigation" class="primary-navigation" id="mySidenav">
-      <div class="logo">
+  <nav role="navigation" class="primary-navigation">
+    <div class="inside-navigation">
+    <div class="logo">
         <a href="index.html">
-          <img src="logo.png" alt="">
-        </a>
+            <img src="logo.jpeg" alt="">
+          </a>
       </div>
       <div class="lang">
         <ul>
@@ -23,20 +24,32 @@
           <li><a href="#">RUS</a></li>
         </ul>
       </div>
-      <div class="sidenav" id="mySidenav">
-        <ul>
-          <li><a class="links" href="index.html">Par mums</a></li>
-          <li><a class="links" href="veikals.html">Veikals &dtrif;</a>
-            <ul class="dropdown">
-                <li><a class="links" href="aukstumkameras.html">Aukstumkameras</a></li>
-                <li><a class="links" href="#">Monobloki</a></li>
-            </ul>
-          </li>
-          <li class="last-nav"><a class="links" href="kontakti.html">Kontakti</a></li>
+      <span style="font-size: 35px; cursor: pointer;" class="menu-button" id="menu-btn" onclick="menutoggle()">&#9776;</span>
+    <div class="test">
+      <ul>
+        
+        <li><a href="index.html">Par mums</a></li>
+        <li><a href="veikals.html">Veikals &dtrif;</a>
+        <ul class="dropdown">
+            <li><a href="aukstumkameras.html">Aukstumkameras</a></li>
+            <li><a href="monobloki.html">Monobloki</a></li>
         </ul>
-      </div>
-      </nav>
-      <span class="menu-button" id="menu-btn">&#9776;</span>
+        </li>
+        <li class="last-nav"><a href="kontakti.html">Kontakti</a></li>
+    </ul>
+  </div>
+</div>
+</nav>
+<h1 class="virsraksts">Par mums</h1>
+  <div id="mySidenav" class="sidenav">
+    <div class="navWrapper">
+        <a href="index.html">Par mums</a>
+        <a href="veikals.html">Veikals</a>
+        <a href="kontakti.html">Kontakti</a>
+    </div>
+  </div>
+      
+      
 
       <div class="slider">
         <div class="slide active">
