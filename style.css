@@ -759,7 +759,7 @@ footer .footer-container ul .fa {
   .menu-button {
     margin: 0;
     display: grid;
-    z-index: 1005;
+    z-index: 999;
     grid-column: 3;
     justify-self: flex-end;
     align-self: center;
@@ -848,6 +848,57 @@ footer h2 {
 }
 footer ul li {
   font-size: 14px;
+}
+.contacts .contacts-container h2{
+  font-size: 20px;
+}
+.contacts .contacts-container ul li{
+  color: black;
+  border: none;
+  font-size: 12px;
+
+}
+.btn-contacts {
+  padding: 10px 20px;
+  margin: 0;
+  border-radius: 5px;
+  font-size: 11px;
+  margin-left: 52%;
+  position: absolute;
+  z-index: 0;
+  display: flex;
+  margin-top: 70px;
+}
+.row{
+  display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    margin: 30px 0;
+ }
+ .row img {
+  width: 100%;                  
+  height: auto;
+  padding: 10px;
+ }
+.product {
+  flex-basis: 50%;
+  transition: transform 0.5s;
+}
+.single-product {
+  padding: 80px 0;
+  display: block;
+}
+.img-inside {
+  width: 60%;
+  margin-left: 20%;
+}
+.wrapper {
+  margin: 20px 0;
+}
+.btn-single-product {
+  margin-left: 35%;
+  padding: 5px 15px;
+  width: 30%;
 }
 
 }

@@ -11,11 +11,12 @@
 </head>
 <body>
     <div class="container">
-        <nav role="navigation" class="primary-navigation" id="myHeader">
-          <div class="logo">
-            <a href="../index.html">
-              <img src="../logo.jpeg" alt="">
-            </a>
+      <nav role="navigation" class="primary-navigation">
+        <div class="inside-navigation">
+        <div class="logo">
+          <a href="../../index.html">
+            <img src="../../logo.png" alt="">
+          </a>
           </div>
           <div class="lang">
             <ul>
@@ -24,17 +25,30 @@
               <li><a href="#">RUS</a></li>
             </ul>
           </div>
-            <ul>
-                <li><a href="../../index.html">Par mums</a></li>
-                <li><a href="../../veikals.html">Veikals &dtrif;</a>
-                <ul class="dropdown">
-                    <li><a href="../../aukstumkameras.html">Aukstumkameras</a></li>
-                    <li><a href="../../monobloki.html">Monobloki</a></li>
-                </ul>
-                </li>
-                <li class="last-nav"><a href="../../kontakti.html">Kontakti</a></li>
+          <span style="font-size: 35px; cursor: pointer;" class="menu-button" id="menu-btn" onclick="menutoggle()">&#9776;</span>
+        <div class="test">
+          <ul>
+            
+            <li><a href="../../index.html">Par mums</a></li>
+            <li><a href="../../veikals.html">Veikals &dtrif;</a>
+            <ul class="dropdown">
+                <li><a href="../../aukstumkameras.html">Aukstumkameras</a></li>
+                <li><a href="../../monobloki.html">Monobloki</a></li>
             </ul>
-        </nav>
+            </li>
+            <li class="last-nav"><a href="../../kontakti.html">Kontakti</a></li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+      <div id="mySidenav" class="sidenav">
+        <div class="navWrapper">
+            <a href="../../index.html">Par mums</a>
+            <a href="../../veikals.html">Veikals</a>
+            <a href="../../kontakti.html">Kontakti</a>
+        </div>
+      </div>
+      <div id="overlay"></div>
         <h2 class="virsraksts">Split-sistēma SB211S</h2>
         
     <div class="single-product">
@@ -45,7 +59,7 @@
         <div class="wrapper">
             <div class="float-right details">
                 <div class="price">
-                    <button data-modal-target="#modal" class="btn">Pieprasīt cenu</button>
+                    <button data-modal-target="#modal" class="btn btn-single-product">Pieprasīt cenu</button>
                     <div class="modal" id="modal">
                         <div class="modal-header">
                             <div class="title">Pieprasīt cenu</div>
