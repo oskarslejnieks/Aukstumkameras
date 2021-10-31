@@ -97,7 +97,7 @@ const slider = document.querySelector(".slider");
       slideIcons[slideNumber].classList.add("active");
     });
 
-    //image slider autoplay
+
     var playSlider;
 
     var repeater = () => {

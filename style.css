@@ -932,9 +932,9 @@ footer .footer-container ul .fa {
 }
 
 .slider .slide .info3{
-  width: 25vw;
-  margin-top: 150px;
-  margin-left: 220px;
+  width: 40vw;
+  margin-top: 230px;
+  margin-left: 200px;
 }
 .slider .slide .info3 p {
   font-size: 16px;
@@ -987,7 +987,10 @@ footer ul li {
   width: 60%;
   margin-left: 20%;
 }
-
+.virsraksts1-pirmais {
+  padding-top: 20px;
+  margin: 0 10px;
+}
 }
 @media (min-width: 425px) and (max-width: 767px) {
   .tablet {
@@ -1171,19 +1174,22 @@ footer ul li {
   margin: 20px 0;
 }
 .btn-single-product {
-  margin-left: 35%;
+  margin-left: 30%;
   padding: 5px 15px;
-  width: 30%;
+  width: 40%;
 }
 .productImage1 {
-  width: 60%;
-  margin-left: 20%;
+  width: 100%;
 }
 .map {
   margin: 50px;
   width: 80%;
   height: 60vw;
   margin-left: 10%;
+}
+.virsraksts1-pirmais {
+  padding: 0;
+  margin: 0 10px;
 }
 }
 @media (min-width: 375px) and (max-width: 424px) {
@@ -1368,13 +1374,12 @@ footer ul li {
   margin: 20px 0;
 }
 .btn-single-product {
-  margin-left: 35%;
+  margin-left: 30%;
   padding: 5px 15px;
-  width: 30%;
+  width: 40%;
 }
 .productImage1 {
-  width: 60%;
-  margin-left: 20%;
+  width: 100%;
 }
 .map {
   margin: 50px;
@@ -1386,6 +1391,10 @@ footer .footer-container ul .fa {
   color: #4285F4;
   margin-left: 20px;
   padding: 10px;
+}
+.virsraksts1-pirmais {
+  padding: 0;
+  margin: 0 10px;
 }
 }
 @media (min-width: 320px) and (max-width: 374px) {
@@ -1421,6 +1430,10 @@ footer .footer-container ul .fa {
     z-index: 1000;
     justify-self: center;
     background: white;
+    width: 100%;
+  }
+  .inside-navigation .logo img {
+    width: 100%;
   }
   .primary-navigation {
     padding: 0;
@@ -1475,10 +1488,13 @@ footer .footer-container ul .fa {
     margin-right: 25px;
   }
   .virsraksts {
-    font-size: 1.5em;
     padding: 0;
     margin: 0;
     text-transform: uppercase;
+  }
+  .virsraksts1-pirmais {
+    padding: 0;
+    margin: 0 10px;
   }
   .slider {
     margin-top: 45px;
@@ -1537,7 +1553,7 @@ footer h2 {
   font-size: 20px;
 }
 footer ul li {
-  font-size: 15px;
+  font-size: 13px;
 }
 .contacts .contacts-container h2{
   font-size: 23px;
@@ -1545,12 +1561,12 @@ footer ul li {
 .contacts .contacts-container ul li{
   color: black;
   border: none;
-  font-size: 14.5px;
+  font-size: 12.5px;
 
 }
 .row{
   display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
     list-style: none;
     margin: 30px 0;
  }
@@ -1563,6 +1579,9 @@ footer ul li {
   flex-basis: 50%;
   transition: transform 0.5s;
 }
+.product:first-child {
+  flex-basis: 50%;
+}
 .single-product {
   display: block;
 }
@@ -1570,13 +1589,12 @@ footer ul li {
   margin: 20px 0;
 }
 .btn-single-product {
-  margin-left: 35%;
+  margin-left: 25%;
   padding: 5px 15px;
-  width: 30%;
+  width: 50%;
 }
 .productImage1 {
-  width: 60%;
-  margin-left: 20%;
+  width: 100%;
 }
 .map {
   margin: 50px;
@@ -1588,5 +1606,9 @@ footer .footer-container ul .fa {
   color: #4285F4;
   margin-left: 20px;
   padding: 10px;
+}
+table, th, td, tr {
+    padding: 5px 5px 5px 20px;
+    font-size: 16px;
 }
 }
