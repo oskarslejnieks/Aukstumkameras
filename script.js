@@ -117,7 +117,7 @@ const slider = document.querySelector(".slider");
 
         slides[slideNumber].classList.add("active");
         slideIcons[slideNumber].classList.add("active");
-      }, 10000);
+      }, 15000);
     }
     repeater();
 
