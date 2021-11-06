@@ -1005,7 +1005,7 @@ footer ul li {
     position: relative;
     background: #000116;
     width: 100%;
-    height: 60vh;
+    height: 600px;
     margin: 20px;
     overflow: hidden;
     margin: 120px auto 0px auto;
@@ -1127,8 +1127,8 @@ footer ul li {
 
 .slider .slide .info3{
   width: 70vw;
-  margin-top: 250px;
-  margin-left: auto;
+  margin: 350px auto;
+  position: relative;
 }
 .slider .slide .info3 p {
   font-size: 15px;
@@ -1205,7 +1205,7 @@ footer ul li {
     position: relative;
     background: #000116;
     width: 100%;
-    height: 60vh;
+    height: 600px;
     margin: 20px;
     overflow: hidden;
     margin: 120px auto 0px auto;
@@ -1411,7 +1411,7 @@ footer .footer-container ul .fa {
     position: relative;
     background: #000116;
     width: 100%;
-    height: 60vh;
+    height: 600px;
     margin: 20px;
     overflow: hidden;
     margin: 120px auto 0px auto;
