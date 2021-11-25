@@ -7,7 +7,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 # Check for file in directory with .html
 RewriteCond %{REQUEST_FILENAME}\.html -f
 
-#Show the page with .html
+# Show the page with .html
 RewriteRule ^(.*)$ $1.html [NC,L]
 
 
