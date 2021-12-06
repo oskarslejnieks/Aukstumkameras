@@ -131,5 +131,11 @@ const slider = document.querySelector(".slider");
       repeater();
     });
 
+    window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-214475715-1');
+
 
 
